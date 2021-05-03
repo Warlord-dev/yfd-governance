@@ -922,7 +922,7 @@ pragma solidity 0.6.12;
 // Votx with Governance
 contract VOTX is ERC20Upgradeable, OwnableUpgradeable {
     function initialize() public initializer {
-        __ERC20_init("VOTX", "VOTX");
+        __ERC20_init("VOTX v2", "VOTXv2");
         _setupDecimals(18);
         __Ownable_init();
         // _mint(msg.sender, 100000 * 10**uint256(decimals()));
