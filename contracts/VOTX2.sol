@@ -920,7 +920,7 @@ pragma solidity 0.6.12;
 // https://github.com/compound-finance/compound-protocol/blob/master/contracts/Governance/Comp.sol
 
 // Votx with Governance
-contract VOTX is ERC20Upgradeable, OwnableUpgradeable {
+contract VOTX2 is ERC20Upgradeable, OwnableUpgradeable {
     function initialize() public initializer {
         __ERC20_init("VOTX v2", "VOTXv2");
         _setupDecimals(18);

@@ -2,7 +2,7 @@
 pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
-import "./VOTX.sol";
+import "./VOTX2.sol";
 
 contract GovernorAlpha is Initializable {
     /// @notice The name of this contract
@@ -38,7 +38,7 @@ contract GovernorAlpha is Initializable {
 
     /// @notice The address of the VOTX governance token
     // XXX: VOTXInterface public votx;
-    VOTX public votx;
+    VOTX2 public votx;
 
     /// @notice The address of the Governor Guardian
     address public guardian;
@@ -151,7 +151,7 @@ contract GovernorAlpha is Initializable {
         address _guardian
     ) public initializer {
         timelock = TimelockInterface(_timelock);
-        votx = VOTX(_votx);
+        votx = VOTX2(_votx);
         guardian = _guardian;
     }
 
