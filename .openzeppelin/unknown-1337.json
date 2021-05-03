@@ -1,0 +1,173 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "23f5a7d8e10b55fd94bd9eb1536de084191a500f1fc6f9d74779a5317fb76f38": {
+      "address": "0xf4580567F200098A4fD730fA0CC001911c05B10D",
+      "txHash": "0x016c612eee6f3f1d408a60b125cceebecbe36d2f0991c50eda59b9476fe705d2",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:187"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:192"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:246"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:567"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:569"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:571"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:573"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:574"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_decimals",
+            "type": "t_uint8",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:575"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)44_storage",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:842"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:860"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:914"
+          },
+          {
+            "contract": "VOTX",
+            "label": "_delegates",
+            "type": "t_mapping(t_address,t_address)",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:948"
+          },
+          {
+            "contract": "VOTX",
+            "label": "checkpoints",
+            "type": "t_mapping(t_address,t_mapping(t_uint32,t_struct(Checkpoint)3928_storage))",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:957"
+          },
+          {
+            "contract": "VOTX",
+            "label": "numCheckpoints",
+            "type": "t_mapping(t_address,t_uint32)",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:960"
+          },
+          {
+            "contract": "VOTX",
+            "label": "nonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\E\\Task\\CalDex\\Governance\\SC\\contracts\\VOTX.sol:973"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_mapping(t_uint32,t_struct(Checkpoint)3928_storage))": {
+            "label": "mapping(address => mapping(uint32 => struct VOTX.Checkpoint))"
+          },
+          "t_mapping(t_uint32,t_struct(Checkpoint)3928_storage)": {
+            "label": "mapping(uint32 => struct VOTX.Checkpoint)"
+          },
+          "t_uint32": {
+            "label": "uint32"
+          },
+          "t_struct(Checkpoint)3928_storage": {
+            "label": "struct VOTX.Checkpoint",
+            "members": [
+              {
+                "label": "fromBlock",
+                "type": "t_uint32"
+              },
+              {
+                "label": "votes",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint32)": {
+            "label": "mapping(address => uint32)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_array(t_uint256)44_storage": {
+            "label": "uint256[44]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0xBBB19fc44a31EC329F94f11125fC3cAB2D2e0C01",
+    "txHash": "0x4c895580537af3befa945c26667c0554c14ee57b510f2799ec72c0ed2998ff9a"
+  }
+}

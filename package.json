@@ -1,0 +1,27 @@
+{
+  "name": "yfdgov",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "truffle test --compile-all",
+    "deploy": "truffle migrate --compile-all -f 1 --to 5 --network",
+    "deploy:token": "truffle migrate --compile-all -f 1 --to 1 --network",
+    "deploy:timelock": "truffle migrate --compile-all -f 2 --to 2 --network",
+    "deploy:governance": "truffle migrate --compile-all -f 3 --to 3 --network",
+    "deploy:vesting": "truffle migrate --compile-all -f 4 --to 4 --network"
+  },
+  "author": "Warlord-Dev",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^3.4.1",
+    "truffle": "^5.3.3",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.5.7"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.9",
+    "@openzeppelin/truffle-upgrades": "^1.2.2",
+    "dotenv": "^8.2.0"
+  }
+}
