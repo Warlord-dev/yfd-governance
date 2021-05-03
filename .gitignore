@@ -3,4 +3,3 @@ node_modules
 contracts/artifacts
 build
 yarn.lock
-migrations
